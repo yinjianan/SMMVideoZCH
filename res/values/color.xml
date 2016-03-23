@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="global_bg">#23b574</color>
+    <!-- <color name="global_bg">#3eced7</color> -->
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#CEDDED</color>
+    <color name="white">#ffffff</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+    <color name="custom">#ff0099CC</color>
+    <color name="sticky">#ffffcd5a</color>
+    <color name="bottom_color">#f1f1f1</color>
+    <color name="press_color">#1d945f</color>
+    <color name="gray">#808080</color>
+    <color name="gray1">#C6C2BF</color>
+    <color name="light_gray">#ebebeb</color>
+    <color name="light_black">#333333</color>
+    <color name="load">#eaeaea</color>
+    <color name="list_color">#eeeeee</color>
+    <color name="cursor">#fa7b22</color>
+    <color name="cursor_checked">#fb6000</color>
+    <color name="cursor_nocheck">#1e1e1e</color>
+    <color name="status">#00000000</color>
+    
+    <color name="commit_0">#b7bb54</color>
+    <color name="commit_1">#8f9155</color>
+
+</resources>

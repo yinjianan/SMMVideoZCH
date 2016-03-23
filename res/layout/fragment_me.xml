@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8d8d8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:background="#252525"
+        android:layout_height="@dimen/top_height"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+    <LinearLayout
+        android:id="@+id/pNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/settings_aboutus" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="个人账号"/>
+        <TextView 
+            android:id="@+id/fm_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+        <ImageView 
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/setting_next"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pProtocol"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/settings_protocol" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="用户协议"/>
+        <ImageView 
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/setting_next"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tousuTel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/settings_phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="投诉热线"/>
+        <ImageView
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/setting_next"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/settings_aboutus" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="关于我们"/>
+        <ImageView 
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/setting_next"/>
+    </LinearLayout>
+
+</LinearLayout>

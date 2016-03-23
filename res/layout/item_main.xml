@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_orange"
+        android:gravity="center_vertical"
+        android:text="最新大片"
+        android:textColor="#686868"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/icon_right_orange"
+        android:gravity="center_vertical"
+        android:text="更多"
+        android:textColor="#686868"
+        android:textSize="18sp" />
+
+    <s.xx.yy.mmv.view.NoScrollGridView
+        android:id="@+id/im_gv"
+        android:numColumns="2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dip"
+        android:verticalSpacing="5dip"
+        android:layout_below="@id/tv_cat" >
+    </s.xx.yy.mmv.view.NoScrollGridView>
+
+</RelativeLayout>
