@@ -10,10 +10,8 @@ import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.tandong.sa.loopj.AsyncHttpResponseHandler;
@@ -27,7 +25,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import s.xx.yy.mmv.base.BaseApplication;
 import s.xx.yy.mmv.constants.Conf;
 import s.xx.yy.mmv.utils.CommonUtils;
 import s.xx.yy.mmv.utils.NetUtils;
@@ -83,8 +80,8 @@ public class WelcomeActivity extends Activity {
             pis = context.getPackageManager().getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
             Signature[] sigs = pis.signatures;
             String sig = new String(sigs[0].toChars());
-//            return !original.equalsIgnoreCase(sig);
-            return false;
+            return !original.equalsIgnoreCase(sig);
+//            return false;
         } catch (PackageManager.NameNotFoundException e) { // TODO Auto-generated catch block
         }
         return true;
